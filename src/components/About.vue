@@ -28,12 +28,12 @@
     </div>
     <h2 style="width: 70%;margin:0 auto">
       ————在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</h2>
-    <bottom></bottom>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
-  import Bottom from './Bottom'
+  import Bottom from './foot/Bottom.vue'
 
   export default {
     name: 'fruit-display',
@@ -42,7 +42,9 @@
         Bottom
       }
     },
-    components: {}
+    components: {
+      Bottom
+    }
   }
 </script>
 

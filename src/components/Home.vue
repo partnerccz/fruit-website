@@ -125,7 +125,7 @@
   import ElementUI from 'element-ui'
   import ElInput from 'element-ui/packages/input/src/input'
   import Header from './header/Header'
-  import Bottom from './Bottom'
+  import Bottom from './foot/Bottom'
 
   Vue.use(ElementUI)
   export default {
