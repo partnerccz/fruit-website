@@ -1,45 +1,114 @@
 <template>
-<div class="home" style="margin:0px;">
+<div class="home" style="margin:0px;background-color: #D8D8D8;">
   <div class="slider">
-    <el-carousel height="400px">
+    <el-carousel height="600px">
       <el-carousel-item >
-        <img src="../assets/images/title1.jpg"/>
+        <img src="../assets/images/slider1.jpg" width="100%"/>
       </el-carousel-item>
       <el-carousel-item >
-        <img src="../assets/images/title2.jpg"/>
+        <img src="../assets/images/slider2.jpg" width="100%"/>
       </el-carousel-item>
       <el-carousel-item >
-        <img src="../assets/images/title3.jpg"/>
+        <img src="../assets/images/slider3.jpg" width="100%"/>
       </el-carousel-item>
-      <el-carousel-item >
+   <!--   <el-carousel-item >
         <img src="../assets/images/title4.jpg"/>
       </el-carousel-item>
       <el-carousel-item >
         <img src="../assets/images/title5.jpg"/>
-      </el-carousel-item>
+      </el-carousel-item>-->
     </el-carousel>
   </div>
-  <div class="nav-menu" style="background-color: rgba(0,0,0,.3);height: 50px;position:absolute;top:0px;left:0px;z-index: 1000;width: 100%;">
-    <ul style="width:50%;display: flex;box-sizing: border-box;flex-direction: row;list-style-type: none;font-size:14px;margin:0px auto;line-height: 50px;">
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-underline: none;">嘻果首页</a></li>
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-underline: none;">嘻果</a></li>
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-underline: none;">关于我们</a></li>
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-underline: none;">产品服务</a></li>
+  <div class="nav-menu" style="background-color: rgba(0,0,0,.5);height: 65px;position:absolute;top:0px;left:0px;z-index: 1000;width: 100%;position:fixed;">
+    <ul style="width:50%;display: flex;box-sizing: border-box;flex-direction: row;list-style-type: none;font-size:20px;margin:0px auto;line-height: 65px;">
+      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;"><img src="../assets/images/menu_icon.png" style="vertical-align: middle;margin-top: -3px;"/>&nbsp;嘻果首页</a></li>
+      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;"><img src="../assets/images/logo.png" style="margin-top:13px;"/></a></li>
+      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;">关于我们</a></li>
+      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;">产品服务</a></li>
     </ul>
   </div>
-  <div style="clear: both;display: flex;flex-direction: row;height: 45px;line-height: 50px;border-bottom:1px solid #eaeaea;">
-    <div style="font-size:9px;color:#8f8f8f;flex:1;">热门关键字 有机水果 有机水果配送 水果配送加盟 有机水果供应商</div>
+  <div style="clear: both;display: flex;flex-direction: row;height: 70px;line-height: 75px;border-bottom:1px solid #eaeaea;">
+    <div style="font-size:15px;color:#8f8f8f;flex:1;">热门关键字 有机水果 有机水果配送 水果配送加盟 有机水果供应商</div>
     <div style="flex:1;">
-      <input class="search-input" spaceholder="" style="height: 16px;background-color: #d3d3d3;border:1px solid #d3d3d3;"/>
-      <button class="search-btn" style="background-color: #fc9902;color:white;border:1px solid #fc9902;">搜索</button>
+      <input class="search-input" spaceholder="" style="width:240px;height: 24px;background-color: #d3d3d3;border:1px solid #d3d3d3;"/>
+      <button class="search-btn" style="height: 26px;background-color: #fc9902;color:white;border:1px solid #fc9902;">搜索</button>
     </div>
   </div>
 
-  <div class="content" style="background-color:deepskyblue;height:800px;width:100%;">
-    <div class="about-us">
-      <div></div>
-      <div></div>
-      <div> </div>
+  <div class="content" style="height:1800px;width:100%;margin-top:40px;">
+   <div class="about-us" style="position: relative;">
+     <div style="width:80px;height:80px;background-color:#7cb930;color:white;font-size:22px;position: absolute;left:15%;z-index:1000;margin-left:5%;margin-top:-5px;">
+       <span style="display: block;margin-top:7px;">关 于</span>
+       <span style="display: block;;margin-top:2px;">我 们</span>
+     </div>
+     <div style="font-size:34px;color:#d0d0d0;margin-left:-41%;">
+       ABOUT US
+     </div>
+     <div class="about-us-img"><img src="../assets/images/about-title.png" width="70%;" height="250"/><span></span></div>
+     <div>
+       <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
+     </div>
+      <div style="font-size:18px;width: 100%;text-align: left;display: flex;line-height: 32px;">
+        <div style="width:62%;margin:20px auto 0;color:#1f1f1f;font-weight: 500;">
+        <span style="color:#7cb930;">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
+        构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
+        我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链化为"学校"文化，成长为主线，强调开放、高效、沟通。
+        </div>
+      </div>
+     <div class="quality-service" style="margin-top:60px;">
+      <img src="../assets/images/m01.png"/>
+     </div>
+     <div class="service-standard" style="width:70%;display: flex;flex-direction: row;margin:0px auto;">
+       <dl style="flex:1;">
+         <dt><img src="../assets/images/icon01.png"/></dt>
+         <dd>售后服务</dd>
+         <dd>完善的售后服务，专人、全程跟进，节约人力、物力、财力成本，保证服务质量。</dd>
+       </dl>
+       <dl style="flex:1;">
+         <dt><img src="../assets/images/icon02.png"/></dt>
+         <dd>采购与销售</dd>
+         <dd>全球化的采购网络，引进国外高品质水果，甄选国内优势水果，基于开发的心零售供应链系统，高效的分销、直销体系，为合作伙伴提供专业的水果服务。</dd>
+       </dl>
+       <dl style="flex:1;">
+         <dt ><img src="../assets/images/icon03.png"/></dt>
+         <dd>售后服务</dd>
+         <dd>完善的售后服务，专人、全程跟进，节约人力、物力、财力成本，保证服务质量。</dd>
+       </dl>
+     </div>
+    </div>
+    <div style="margin-top:70px;display: flex;flex-direction: row;">
+      <div style="flex:0.35;">
+        <img src="../assets/images/title1.jpg" width="100%" height="560"/>
+      </div>
+      <div style="flex:0.65;display: flex;flex-direction: column;align-content: center;">
+        <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 550%;">高效供应链</div>
+        <div style="flex: 0.24;">
+          <img src="../assets/images/lc.png" />
+        </div>
+        <div style="flex: 0.52;display: flex;flex-direction: row;justify-content: space-evenly;margin-bottom:20px;">
+          <div style="width:38%;height: 95%;border:0;background-color: white">
+
+          </div>
+          <div style="width:38%;height: 95%;border:0;background-color: white;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;margin-top:50px;">
+      <div><img src="../assets/images/m02.png"/></div>
+
+      <div class="team-brand" id="team-brand">
+        <ul>
+          <li style="" @click.navite="prevBrand"><img src="../assets/images/left.png" style="margin-top:35px;"/></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li><img src="../assets/images/right.png"  style="margin-top:35px;"/></li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -76,12 +145,41 @@
     methods: {
       handleSelect (key, keyPath) {
         console.log(key, keyPath)
+      },
+      prevBrand: function () {
+        var teamBrand = document.getElementById('team-brand').getElementsByTagName('li')
+        if (teamBrand.length >= 3) {
+          for (let i = 0; i <= teamBrand.length - 1; i++) {
+            if (i !== 0 || i !== teamBrand.length - 1) {
+              if (teamBrand[i].style.display === 'block' || teamBrand[i].style.display === '') {
+                for (let j = 1; j <= 5; j++) {
+                  if (i + j !== teamBrand.length - 1) {
+                    teamBrand[i + j].style.display = 'block'
+                    teamBrand[0].style.display = 'block'
+                    teamBrand[teamBrand.length - 1].style.display = 'block'
+                    teamBrand[i].style.display = 'none'
+                  }
+                }
+              }
+            }
+            console.log(i)
+          }
+        }
+      },
+      nextBrand: function () {
+        console.log('nextBrand')
       }
     }
   }
 </script>
 
 <style scoped>
+  .home{
+    margin: 0;
+    background-image: url("../assets/images/bgi2.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
   .el-carousel__item h3 {
     color: #475669;
     font-size: 14px;
@@ -95,6 +193,41 @@
 }
 .search-btn:hover{
   border:1px solid #fc9902;
+}
+.quality-service{
+}
+.service-standard dl dt,dd{
+  margin-top:20px;
+}
+.service-standard dl dt{
+ margin-left:26px;
+}
+.service-standard dl dd:nth-child(2){
+  font-size:22px;
+}
+.service-standard dl dd:nth-child(3){
+  line-height: 32px;
+  text-align: left;
+  font-size:16px;
+}
+.team-brand{
+  width:60%;
+  margin:0 auto;
+}
+.team-brand ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.team-brand ul li{
+  width:100px;
+  height:100px;
+  line-height: 100px;
+  background-color: aqua;
+  border-radius: 50px;
+  list-style-type: none;
+}
+.about-us-img{
 }
 /*  .el-carousel__item:nth-child(2n) {
     background-color: #99a9bf;
