@@ -1,5 +1,5 @@
 <template>
-  <div class="home" style="margin:0 auto;width:80%;">
+  <div class="home">
     <!--header-->
     <headers></headers>
 
@@ -35,7 +35,7 @@
     <Search></Search>
 
     <!--内容-->
-    <div class="content" style="width:100%;margin-top:40px;">
+    <div class="content">
       <div class="about-us" style="position: relative;">
         <div
           style="width:80px;height:80px;background-color:#7cb930;color:white;font-size:22px;position: absolute;left:15%;z-index:1000;margin-left:5%;margin-top:-5px;">
@@ -122,27 +122,27 @@
       </div>
       <div style="clear:both;margin-top:50px;">
         <div><img src="../assets/images/m02.png"/></div>
-        <el-carousel :interval="4000" type="card" height="200px" style="width:700px;margin:20px auto 0;">
+        <el-carousel :interval="4000" type="card" height="200px" class="teamwork">
           <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
              <h3 style="line-height:140px;">{{ item }}</h3>
            </el-carousel-item>-->
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork01.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork02.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork03.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork04.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork05.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
-          <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-            <img src="../assets/images/teamwork06.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <el-carousel-item class="teamwork-child">
+            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
 
         </el-carousel>
@@ -292,10 +292,14 @@
 
 <style scoped>
   .home {
-    margin: 0;
     background-color: white;
+    margin:0 auto;
+    width:80%;
   }
-
+  .content{
+    width:100%;
+    margin-top:40px;
+  }
   @-webkit-keyframes fadeInOut {
     0% {
       opacity: 0;
@@ -403,7 +407,23 @@
     list-style-type: none;
     display: none;
   }
-
+  .teamwork{
+    width:80%;
+    margin:20px auto 0;
+  }
+  .teamwork-child{
+    width:140px;
+    height: 140px;
+    border-radius: 75px;
+    background-color: white;
+    margin-left: 235px;
+    border:1px solid #999;
+  }
+  .teamwork-child-img{
+    width:150px;
+    height: 150px;
+    border-radius: 75px;
+  }
   .about-us-img {
   }
 
