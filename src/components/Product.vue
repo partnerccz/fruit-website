@@ -3,7 +3,7 @@
     <Headers></Headers>
     <img src="../assets/images/ad_01.jpg"/>
     <Search></Search>
-    <div class="display_fruit">
+    <div class="display_fruit">-
       <div v-for="(fruitsClass, index) in fruitsSetting">
         <h2>{{fruitsClass.title}}</h2>
         <table class="tableClass">

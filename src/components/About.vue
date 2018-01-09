@@ -27,11 +27,11 @@
       </div>
       <div class="text_itme">
         <h2>服务理念</h2>
-        <p>诚信友善,务实高效</p>
+        <p>诚信友善,务实高效<br/>
+          在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</p>
       </div>
     </div>
-    <h2 style="width: 70%;margin:0 auto">
-      ————在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</h2>
+
     <Bottom></Bottom>
   </div>
 </template>
@@ -59,8 +59,9 @@
     margin: 0px auto;
     width: 80%;
     .text_conten {
-      text-align: center;
+      text-align: left;
       line-height: 30px;
+      margin-left: 50px;
     }
 
     .text_itme {
