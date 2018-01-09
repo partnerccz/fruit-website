@@ -1,5 +1,8 @@
 <template>
   <div class="product">
+    <Headers></Headers>
+    <img src="../assets/images/ad_01.jpg"/>
+    <Search></Search>
     <div class="display_fruit">
       <div v-for="(fruitsClass, index) in fruitsSetting">
         <h2>{{fruitsClass.title}}</h2>
@@ -20,11 +23,16 @@
 </template>
 
 <script>
-  import Bottom from './foot/Bottom.vue'
+  import Headers from './common/header/Header.vue'
+  import Bottom from './common/footer/Footer.vue'
+  import Search from './common/header/Search'
+
   export default {
     name: 'product',
     components: {
-      Bottom
+      Bottom,
+      Headers,
+      Search
     },
     data: function () {
       return {

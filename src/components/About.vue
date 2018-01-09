@@ -1,5 +1,9 @@
 <template>
   <div class="fruit-display">
+    <Headers></Headers>
+    <img src="../assets/images/ad_01.jpg"/>
+    <Search></Search>
+
     <div class="text_conten">
       <div class="text_itme">
         <h2>企业口号</h2>
@@ -33,17 +37,20 @@
 </template>
 
 <script>
-  import Bottom from './foot/Bottom.vue'
+  import Headers from './common/header/Header.vue'
+  import Search from './common/header/Search'
+  import Bottom from './common/footer/Footer.vue'
 
   export default {
     name: 'fruit-display',
     data: function () {
       return {
-        Bottom
       }
     },
     components: {
-      Bottom
+      Bottom,
+      Headers,
+      Search
     }
   }
 </script>
