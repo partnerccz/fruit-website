@@ -15,12 +15,17 @@
         </table>
       </div>
     </div>
+  <Bottom></Bottom>
   </div>
 </template>
 
 <script>
+  import Bottom from './foot/Bottom.vue'
   export default {
     name: 'product',
+    components: {
+      Bottom
+    },
     data: function () {
       return {
         fruitsSetting: [
@@ -112,30 +117,25 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .product {
-
+    .display_fruit {
+      .tableClass {
+        margin: 80px auto;
+        .truit_item {
+          margin-left: 120px;
+          img, h3 {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          .fruit_img {
+            width: 300px;
+            height: 300px;
+          }
+        }
+      }
+    }
   }
 
-  .fruit_title {
 
-  }
-
-  .truit_item {
-    margin-left: 120px;
-  }
-
-  .truit_item img, h3 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .tableClass {
-    margin: 80px auto;
-  }
-
-  .fruit_img {
-    width: 300px;
-    height: 300px;
-  }
 </style>

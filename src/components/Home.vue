@@ -23,8 +23,8 @@
     <ul style="width:50%;display: flex;box-sizing: border-box;flex-direction: row;list-style-type: none;font-size:20px;margin:0px auto;line-height: 65px;">
       <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;"><img src="../assets/images/menu_icon.png" style="vertical-align: middle;margin-top: -3px;"/>&nbsp;嘻果首页</a></li>
       <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;"><img src="../assets/images/logo.png" style="margin-top:13px;"/></a></li>
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;">关于我们</a></li>
-      <li style="flex:1;"><a href="#" style="color:#fcf5d7;text-decoration: none;">产品服务</a></li>
+      <li style="flex:1;"><router-link to="/about" style="color:#fcf5d7;text-decoration: none;">关于我们</router-link></li>
+      <li style="flex:1;"><router-link to="/product" style="color:#fcf5d7;text-decoration: none;">产品服务</router-link></li>
     </ul>
   </div>
   <div style="clear: both;display: flex;flex-direction: row;height: 70px;line-height: 75px;border-bottom:1px solid #eaeaea;">
@@ -123,6 +123,7 @@
       </el-carousel>
     </div>
   </div>
+  <header></header>
   <bottom></bottom>
 </div>
 </template>
@@ -134,8 +135,8 @@
   import 'element-ui/lib/theme-chalk/index.css'
   import ElementUI from 'element-ui'
   import ElInput from 'element-ui/packages/input/src/input'
-  import Header from './Header'
-  import Bottom from './Bottom'
+  import Header from './header/Header'
+  import Bottom from './foot/Bottom'
 
   Vue.use(ElementUI)
   export default {

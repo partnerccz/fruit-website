@@ -3,7 +3,7 @@
     <div class="text_conten">
       <div class="text_itme">
         <h2>企业口号</h2>
-        <p>科技签收水果改变命运</p>
+        <p>科技牵手水果改变命运</p>
       </div>
       <div class="text_itme">
         <h2>企业愿景</h2>
@@ -26,16 +26,24 @@
         <p>诚信友善,务实高效</p>
       </div>
     </div>
-    <h2 style="width: 70%;margin:0 auto">————在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</h2>
-
+    <h2 style="width: 70%;margin:0 auto">
+      ————在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</h2>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
+  import Bottom from './foot/Bottom.vue'
+
   export default {
     name: 'fruit-display',
     data: function () {
-      return {}
+      return {
+        Bottom
+      }
+    },
+    components: {
+      Bottom
     }
   }
 </script>
@@ -45,6 +53,7 @@
     text-align: center;
     line-height: 30px;
   }
+
   .text_itme {
     margin-bottom: 50px;
   }
