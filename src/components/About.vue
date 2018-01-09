@@ -44,8 +44,7 @@
   export default {
     name: 'fruit-display',
     data: function () {
-      return {
-      }
+      return {}
     },
     components: {
       Bottom,
@@ -55,13 +54,18 @@
   }
 </script>
 
-<style scoped>
-  .text_conten {
-    text-align: center;
-    line-height: 30px;
+<style scoped lang="scss">
+  .fruit-display {
+    margin: 0px auto;
+    width: 80%;
+    .text_conten {
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .text_itme {
+      margin-bottom: 50px;
+    }
   }
 
-  .text_itme {
-    margin-bottom: 50px;
-  }
 </style>

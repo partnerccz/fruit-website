@@ -84,7 +84,7 @@
               [
                 {
                   img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  fruits_name: '干货00000000000000000000000000000'
                 },
                 {
                   img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
@@ -127,9 +127,11 @@
 
 <style scoped lang="scss">
   .product {
+    margin: 0px auto;
+    width: 80%;
     .display_fruit {
       .tableClass {
-        margin: 80px auto;
+        margin: 0px auto;
         .truit_item {
           margin-left: 120px;
           img, h3 {
