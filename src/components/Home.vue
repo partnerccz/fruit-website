@@ -115,19 +115,32 @@
     </div>
     <div style="margin-top:70px;display: flex;flex-direction: row;">
       <div style="flex:0.35;">
-        <img src="../assets/images/title1.jpg" width="100%" height="500"/>
+        <img src="../assets/images/timg.jpg" width="100%" height="500"/>
       </div>
-      <div style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;">
-        <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 550%;">高效供应链</div>
+      <div style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 500px;">
+        <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 500%;">高效供应链</div>
         <div style="flex: 0.24;">
           <img src="../assets/images/lc.png" />
         </div>
-        <div style="flex: 0.52;display: flex;flex-direction: row;justify-content: space-evenly;margin-bottom:20px;">
-          <div style="width:38%;height: 95%;border:0;background-color: white">
-
+        <div style="flex: 0.52;display: flex;flex-direction: row;justify-content: space-evenly;margin:0px;position:relative;">
+          <div style="width:38%;height: 95%;border:0;background-color: white;margin-top:-18px;text-align: right;">
+            <video id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus" :autoplay="video[0].playStatus" height="247px" width="100%">
+              your browser does not support the video tag
+            </video>
+            <!--<img :src="playStatus" width="80" height="80" style="position:absolute;left:23%;top:30%;"/>--><!--
+            <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
+            <span class="ico ico-skip"></span>
+            <span class="" v-on:click="showFullScreen(0)"><img src="../assets/images/fullscreem.jpg" height="22" width="22" style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
+            <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
           </div>
-          <div style="width:38%;height: 95%;border:0;background-color: white;">
-
+          <div style="width:38%;height: 95%;border:0;background-color: white;margin-top:-20px;text-align: right;">
+            <video id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus" :autoplay="video[1].playStatus" height="247px" width="100%">
+              your browser does not support the video tag
+            </video><!--
+            <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
+            <span class="ico ico-skip"></span>
+            <span class="" v-on:click="showFullScreen(1)"><img src="../assets/images/fullscreem.jpg" height="22" width="22" style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
+            <span class="ico ico-video" :class="{ hide: video[1].isPlay }" v-on:click="playClick(1)">{{video[1].playOrPause}}</span>
           </div>
         </div>
       </div>
@@ -160,8 +173,30 @@
       </el-carousel>
     </div>
   </div>
+
+  <!--<div style="padding: 120px 0;">
+    <video id="myvideo" :src="videoSrc" :poster="videoImg" :muted="muteStatus" :autoplay="playStatus" height="414" width="720">
+      your browser does not support the video tag
+    </video>
+    <span class="ico ico-sound" :class="{ active: isMute }" v-on:click="closeSoundClick()"></span>
+    <span class="ico ico-skip"></span>
+    <span class="ico ico-video" :class="{ hide: isPlay }" v-on:click="playClick()"></span>
+  </div>-->
+  <div id="showFullScreen" class="closeFullScreen" style="position: absolute;left: 1px;top: 1px;width:100%;height: 3400px;background-color: rgba(0, 0, 0,1);z-index:100000;overflow: hidden;">
+    <div style="width:600px;height: 450px;background-color: white;position: fixed;left:50%;top:150px;margin-left:-250px;color:white;text-align: right;">
+      <video id="myvideo3" :src="video[fullscreen].videoSrc" :poster="video[fullscreen].videoImg" :muted="video[fullscreen].muteStatus" :autoplay="video[fullscreen].playStatus" height="450px" width="600px">
+        your browser does not support the video tag
+      </video>
+      <!--<img :src="playStatus" width="80" height="80" style="position:absolute;left:23%;top:30%;"/>--><!--
+      <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
+      <span class="ico ico-skip"></span>
+      <span v-on:click="closeFullScreen()"><img src="../assets/images/normalscreen.jpg" height="22" width="22" style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
+      <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
+    </div>
+  </div>
   <header></header>
   <bottom></bottom>
+
 </div>
 </template>
 
@@ -193,16 +228,92 @@
       return {
         activeIndex: '1',
         activeIndex2: '1',
-        tbIndex: 0
+        tbIndex: 0,
+        video: [
+          {
+            _dom: '',
+            videoSrc: 'http://babylife.qiniudn.com/FtRVyPQHHocjVYjeJSrcwDkApTLQ',
+            videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
+            playStatus: '',
+            muteStatus: '',
+            isMute: true,
+            isPlay: true,
+            playOrPause: '暂停'
+          },
+          {
+            _dom: '',
+            videoSrc: 'http://babylife.qiniudn.com/FtRVyPQHHocjVYjeJSrcwDkApTLQ',
+            videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
+            playStatus: '',
+            muteStatus: '',
+            isMute: true,
+            isPlay: true,
+            playOrPause: '暂停'
+          }
+        ],
+        fullscreen: 0
       }
     },
     methods: {
       handleSelect: function (key, keyPath) {
         console.log(key, keyPath)
+      },
+      playClick (val) {
+        console.log(val)
+        if (val === 0) {
+          this._dom = document.getElementById('myvideo1')
+        } else if (val >= 2) {
+          this._dom = document.getElementById('myvideo3')
+          val -= 2
+        } else {
+          this._dom = document.getElementById('myvideo2')
+        }
+        this.video[val].isPlay = !this.video[val].isPlay
+        if (this.video[val].isPlay) {
+          this._dom.play()
+          this.video[val].playOrPause = '暂停'
+        } else {
+          this._dom.pause()
+          this.video[val].playOrPause = '播放'
+        }
+      },
+      closeSoundClick () {
+        this.isMute = !this.isMute
+        if (this.isMute) {
+          this.muteStatus = ''
+        } else {
+          this.muteStatus = 'muted'
+        }
+      },
+      showOtherVideo () {
+        let _this = this
+        console.log('_this:' + _this)
+        setInterval(function () {
+          if (typeof (_this._dom) !== 'undefined') {
+            console.log('_this._dom:' + _this._dom)
+            _this.flag = _this._dom.paused
+            if (_this.flag) {
+              console.log(_this.flag)
+              this.playOrPause = '播放'
+            }
+          } else {
+            console.log('a')
+          }
+        }, 1000)
+      },
+      showFullScreen (val) {
+        this.fullscreen = val
+        console.log(val)
+        var sfs = document.getElementById('showFullScreen')
+        sfs.style.display = 'block'
+      },
+      closeFullScreen () {
+        var sfs = document.getElementById('showFullScreen')
+        sfs.style.display = 'none'
       }
     },
     mounted: function () {
-      this.nextBrand(this.tbIndex)
+      this._dom = document.getElementById('myvideo1')
     }
   }
 </script>
@@ -213,6 +324,51 @@
     background-color: white;
   }
 
+  @-webkit-keyframes fadeInOut {
+    0% {
+      opacity:0;
+    }
+    25% {
+      opacity:1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity:1;
+    }
+  }
+  #showFullScreen{
+    display: none;
+    position:absolute;
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+  }
+  @-webkit-keyframes fadeOutIn {
+    0% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity:0;
+    }
+  }
+  .closeFullScreen{
+    position:absolute;
+    -webkit-animation-name: fadeOutIn;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+  }
   .el-carousel__item h3 {
     color: #475669;
     font-size: 14px;
