@@ -1,15 +1,24 @@
 <template>
-<div class="home" style="margin:0px;background-color: #D8D8D8;">
+<div class="home" style="margin:0 auto;width:80%;">
   <div class="slider">
-    <el-carousel height="600px">
+    <el-carousel height="650px" >
       <el-carousel-item >
-        <img src="../assets/images/slider1.jpg" width="100%"/>
+        <img src="../assets/images/slider1.jpg" width="100%" height="100%"/>
+        <div style="position: absolute;left:40%;top:430px;z-index: 10000;font-size:28px;color:#ffffff;letter-spacing: 5px;">
+          <span style="display: block;border-top:1px solid #ffffff;border-bottom: 1px solid #ffffff;padding: 5px 25px;margin-bottom:20px;line-height: 34px; ">与合作伙伴写作共赢</span>
+          <img src="../assets/images/m01.png"/>
+        </div>
       </el-carousel-item>
       <el-carousel-item >
-        <img src="../assets/images/slider2.jpg" width="100%"/>
-      </el-carousel-item>
-      <el-carousel-item >
-        <img src="../assets/images/slider3.jpg" width="100%"/>
+        <img src="../assets/images/slider2.jpg" width="100%" height="100%"/>
+        <div style="position: absolute;left:50%;top:430px;z-index: 10000;font-size:22px;color:#ffffff;letter-spacing: 5px;margin-left:-250px;">
+          <span style="display: block;border-top:1px solid #ffffff;border-bottom: 1px solid #ffffff;padding: 5px 25px;margin-bottom:20px;line-height: 34px;">
+            <span style="display: block">整合全球优质资源，构建高效供应链，</span>
+
+            <span style="display: block">推动现代农业的发展，实现产业报国。</span>
+          </span>
+          <img src="../assets/images/m01.png"/>
+        </div>
       </el-carousel-item>
    <!--   <el-carousel-item >
         <img src="../assets/images/title4.jpg"/>
@@ -78,9 +87,9 @@
     </div>
     <div style="margin-top:70px;display: flex;flex-direction: row;">
       <div style="flex:0.35;">
-        <img src="../assets/images/title1.jpg" width="100%" height="560"/>
+        <img src="../assets/images/title1.jpg" width="100%" height="500"/>
       </div>
-      <div style="flex:0.65;display: flex;flex-direction: column;align-content: center;">
+      <div style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;">
         <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 550%;">高效供应链</div>
         <div style="flex: 0.24;">
           <img src="../assets/images/lc.png" />
@@ -102,7 +111,7 @@
           <h3 style="line-height:140px;">{{ item }}</h3>
         </el-carousel-item>-->
         <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
-          <img src="../assets/images/teamwork06.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+          <img src="../assets/images/teamwork01.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
         </el-carousel-item>
         <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
           <img src="../assets/images/teamwork02.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
@@ -169,9 +178,7 @@
 <style scoped>
   .home{
     margin: 0;
-    background-image: url("../assets/images/bgi2.png");
-    background-size: auto;
-    background-repeat: repeat;
+    background-color: white;
   }
   .el-carousel__item h3 {
     color: #475669;
