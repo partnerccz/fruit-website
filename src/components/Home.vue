@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="content" style="height:1800px;width:100%;margin-top:40px;">
+  <div class="content" style="width:100%;margin-top:40px;">
    <div class="about-us" style="position: relative;">
      <div style="width:80px;height:80px;background-color:#7cb930;color:white;font-size:22px;position: absolute;left:15%;z-index:1000;margin-left:5%;margin-top:-5px;">
        <span style="display: block;margin-top:7px;">关 于</span>
@@ -97,21 +97,32 @@
     </div>
     <div style="clear:both;margin-top:50px;">
       <div><img src="../assets/images/m02.png"/></div>
+      <el-carousel :interval="4000" type="card" height="200px" style="width:700px;margin:20px auto 0;">
+       <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
+          <h3 style="line-height:140px;">{{ item }}</h3>
+        </el-carousel-item>-->
+        <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork06.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
+        <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork02.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
+        <el-carousel-item  style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork03.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
+        <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork04.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
+        <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork05.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
+        <el-carousel-item style="width:140px;height: 140px;border-radius: 70px;margin-left: 100px;">
+          <img src="../assets/images/teamwork06.jpg" style="width:140px;height: 140px;border-radius: 70px;"/>
+        </el-carousel-item>
 
-      <div class="team-brand" id="team-brand">
-        <ul>
-          <li style="" @click.navite="prevBrand"><img src="../assets/images/left.png" style="margin-top:35px;"/></li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li><img src="../assets/images/right.png"  style="margin-top:35px;"/></li>
-        </ul>
-      </div>
+      </el-carousel>
     </div>
   </div>
-
   <bottom></bottom>
 </div>
 </template>
@@ -139,36 +150,17 @@
     data () {
       return {
         activeIndex: '1',
-        activeIndex2: '1'
+        activeIndex2: '1',
+        tbIndex: 0
       }
     },
     methods: {
       handleSelect (key, keyPath) {
         console.log(key, keyPath)
-      },
-      prevBrand: function () {
-        var teamBrand = document.getElementById('team-brand').getElementsByTagName('li')
-        if (teamBrand.length >= 3) {
-          for (let i = 0; i <= teamBrand.length - 1; i++) {
-            if (i !== 0 || i !== teamBrand.length - 1) {
-              if (teamBrand[i].style.display === 'block' || teamBrand[i].style.display === '') {
-                for (let j = 1; j <= 5; j++) {
-                  if (i + j !== teamBrand.length - 1) {
-                    teamBrand[i + j].style.display = 'block'
-                    teamBrand[0].style.display = 'block'
-                    teamBrand[teamBrand.length - 1].style.display = 'block'
-                    teamBrand[i].style.display = 'none'
-                  }
-                }
-              }
-            }
-            console.log(i)
-          }
-        }
-      },
-      nextBrand: function () {
-        console.log('nextBrand')
       }
+    },
+    mounted: function () {
+      this.nextBrand(this.tbIndex)
     }
   }
 </script>
@@ -226,9 +218,26 @@
   background-color: aqua;
   border-radius: 50px;
   list-style-type: none;
+  display: none;
 }
 .about-us-img{
 }
+
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 /*  .el-carousel__item:nth-child(2n) {
     background-color: #99a9bf;
   }
