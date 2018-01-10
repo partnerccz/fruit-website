@@ -1,7 +1,7 @@
 <template>
   <div class="fruit-display">
     <Headers></Headers>
-    <img src="../assets/images/ad_01.jpg"/>
+    <img class="show_img" src="../assets/images/ad_01.jpg"/>
     <Search></Search>
 
     <div class="text_conten">
@@ -28,7 +28,8 @@
       <div class="text_itme">
         <h2>服务理念</h2>
         <p>诚信友善,务实高效<br/>
-          在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来</p>
+          在没有标准产品和服务的水果行业里,我们用心提供优质服务,运用互联网技术和行业知识,为提升用户竞争力做各种努力,并坚信科技牵手果业一定可以改变未来
+        </p>
       </div>
     </div>
 
@@ -58,6 +59,11 @@
   .fruit-display {
     margin: 0px auto;
     width: 80%;
+
+    .show_img {
+      width: 100%;
+    }
+
     .text_conten {
       text-align: left;
       line-height: 30px;
@@ -66,6 +72,11 @@
 
     .text_itme {
       margin-bottom: 50px;
+    }
+
+    .end_str {
+      border-left: 2px solid #66a812;
+      padding-left: 10px;
     }
   }
 

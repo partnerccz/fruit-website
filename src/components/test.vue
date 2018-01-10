@@ -1,33 +1,32 @@
 <template>
   <div>
-    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item index="1">处理中心</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">我的工作台</template>
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-      </el-submenu>
-      <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-    </el-menu>
-    <div class="line"></div>
-    <el-menu
-      :default-active="activeIndex2"
-      class="el-menu-demo"
-      mode="horizontal"
-      @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b">
-      <el-menu-item index="1">处理中心</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">我的工作台</template>
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-      </el-submenu>
-      <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-    </el-menu>
+    <div class="box">
+      <div class="item">
+        <p>1</p>
+      </div>
+      <div class="item">
+        <p>2</p>
+      </div>
+      <div class="item">
+        <p>3</p>
+      </div>
+      <div class="item">
+        <p>4</p>
+      </div>
+      <div class="item">
+        <p>5</p>
+      </div>
+      <div class="item">
+        <p>6</p>
+      </div>
+      <div class="item">
+        <p>7</p>
+      </div>
+      <div class="item">
+        <p>8</p>
+      </div>
+    </div>
+    <!--div[style='background-color: #676767']>div[style='background-color: red']*8-->
   </div>
 </template>
 
@@ -37,16 +36,9 @@
   export default {
     name: 'test',
     data () {
-      return {
-        activeIndex: '1',
-        activeIndex2: '1'
-      }
+      return {}
     },
-    methods: {
-      handleSelect (key, keyPath) {
-        console.log(key, keyPath)
-      }
-    },
+    methods: {},
     components: {
       ElementUI
     }
@@ -54,5 +46,25 @@
 </script>
 
 <style scoped>
+
+  .box {
+    background-color: #676767;
+    width: 800px;
+    height: 400px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .item {
+    background-color: red;
+    border: 2px solid #000;
+    width: 180px;
+    height: 150px;
+  }
 
 </style>

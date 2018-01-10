@@ -1,16 +1,17 @@
 <template>
   <div class="product">
     <Headers></Headers>
-    <img src="../assets/images/ad_01.jpg"/>
+    <Slideshow></Slideshow>
+    <!--<img src="../assets/images/ad_01.jpg" class="show_img"/>-->
     <Search></Search>
-    <div class="display_fruit">-
+    <div class="display_fruit">
       <div v-for="(fruitsClass, index) in fruitsSetting">
-        <h2>{{fruitsClass.title}}</h2>
+        <h2 class="fruit_title">{{fruitsClass.title}}</h2>
         <table class="tableClass">
           <div v-for="(fruitsTr, index) in fruitsClass.fruits">
             <tr>
               <td class="truit_item" v-for="(fruitsTd, index) in fruitsTr">
-                <img :src="fruitsTd.img_url" alt="" class="fruit_img">
+                <img class="fruit_img" :key="index" :src="fruitsTd.img_url" alt="">
                 <h3 class="fruit_name_str" v-text="fruitsTd.fruits_name"></h3>
               </td>
             </tr>
@@ -18,7 +19,7 @@
         </table>
       </div>
     </div>
-  <Bottom></Bottom>
+    <Bottom></Bottom>
   </div>
 </template>
 
@@ -26,13 +27,15 @@
   import Headers from './common/header/Header.vue'
   import Bottom from './common/footer/Footer.vue'
   import Search from './common/header/Search'
+  import Slideshow from './common/header/Slideshow'
 
   export default {
     name: 'product',
     components: {
       Bottom,
       Headers,
-      Search
+      Search,
+      Slideshow
     },
     data: function () {
       return {
@@ -42,38 +45,38 @@
             fruits: [
               [
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/智利车厘子.jpg'),
+                  fruits_name: '智利车厘子'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/越南红心火龙果.jpg'),
+                  fruits_name: '越南红心火龙果'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/印尼山竹.jpg'),
+                  fruits_name: '印尼山竹'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/干尧.jpg'),
+                  fruits_name: '越南干尧榴莲'
                 }
               ],
               [
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/进口蓝莓.jpg'),
+                  fruits_name: '进口蓝莓'
                 },
                 {
-                  img_url: 'http://pic13.nipic.com/20110301/2531170_082157389664_2.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/哥伦比亚燕窝果.jpg'),
+                  fruits_name: '哥伦比亚燕窝果'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/台湾高端柠檬.jpg'),
+                  fruits_name: '进口柠檬'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/import/草莓.jpg'),
+                  fruits_name: '进口草莓'
                 }
               ]
             ]
@@ -83,38 +86,38 @@
             fruits: [
               [
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货00000000000000000000000000000'
+                  img_url: require('../assets/images/ProductShowImg/domestic/齐峰翠香猕猴桃.jpg'),
+                  fruits_name: '齐峰翠香猕猴桃'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/不知火丑橘.jpg'),
+                  fruits_name: '不知火丑橘'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/冰糖木瓜.jpg'),
+                  fruits_name: '冰糖木瓜'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/广西脆皮金桔.jpg'),
+                  fruits_name: '广西脆皮金桔'
                 }
               ],
               [
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/新疆无籽红提.jpg'),
+                  fruits_name: '新疆无籽红提'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/百香果.jpg'),
+                  fruits_name: '百香果'
                 },
                 {
-                  img_url: 'http://file06.16sucai.com/2016/0502/19b572a189ec13d9cdcac82f579d680a.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/老树冰糖血橙.jpg'),
+                  fruits_name: '老树冰糖血橙'
                 },
                 {
-                  img_url: 'http://pic13.nipic.com/20110301/2531170_082157389664_2.jpg',
-                  fruits_name: '干货'
+                  img_url: require('../assets/images/ProductShowImg/domestic/阿克苏苹果.jpg'),
+                  fruits_name: '阿克苏苹果'
                 }
               ]
             ]
@@ -129,18 +132,24 @@
   .product {
     margin: 0px auto;
     width: 80%;
+    .show_img {
+      width: 100%;
+    }
     .display_fruit {
+      .fruit_title {
+        margin-top: 60px;
+      }
       .tableClass {
-        margin: 0px auto;
+        margin: 30px auto 0px auto;
+        width: 100%;
         .truit_item {
           margin-left: 120px;
-          img, h3 {
-            margin-left: 10px;
-            margin-right: 10px;
-          }
+          width: 25%;
           .fruit_img {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+          }
+          .fruit_name_str {
+
           }
         }
       }
