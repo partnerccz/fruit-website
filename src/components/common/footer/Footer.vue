@@ -17,7 +17,7 @@
     background-color: #66a812;
     color: #f5faf0;
     height: 50px;
-    width: 100%;
+    width: 80%;
     line-height: 50px;
     /*border-radius:5px;*/
   }

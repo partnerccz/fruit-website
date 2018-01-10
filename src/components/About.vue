@@ -32,15 +32,11 @@
         </p>
       </div>
     </div>
-
-    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
-  import Headers from './common/header/Header.vue'
   import Search from './common/header/Search'
-  import Bottom from './common/footer/Footer.vue'
 
   export default {
     name: 'fruit-display',
@@ -48,8 +44,6 @@
       return {}
     },
     components: {
-      Bottom,
-      Headers,
       Search
     }
   }

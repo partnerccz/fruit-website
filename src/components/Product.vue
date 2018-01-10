@@ -1,6 +1,5 @@
 <template>
   <div class="product">
-    <Headers></Headers>
     <Slideshow></Slideshow>
     <!--<img src="../assets/images/ad_01.jpg" class="show_img"/>-->
     <Search></Search>
@@ -19,21 +18,16 @@
         </table>
       </div>
     </div>
-    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
-  import Headers from './common/header/Header.vue'
-  import Bottom from './common/footer/Footer.vue'
   import Search from './common/header/Search'
   import Slideshow from './common/header/Slideshow'
 
   export default {
     name: 'product',
     components: {
-      Bottom,
-      Headers,
       Search,
       Slideshow
     },
@@ -143,8 +137,7 @@
         margin: 30px auto 0px auto;
         width: 100%;
         .truit_item {
-          margin-left: 120px;
-          width: 25%;
+          width: 20%;
           .fruit_img {
             width: 100%;
           }

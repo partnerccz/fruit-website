@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <!--header-->
-    <headers></headers>
-
     <!--slider-->
     <Slideshow></Slideshow>
 
@@ -142,8 +139,6 @@
       </div>
     </div>
 
-    <bottom></bottom>
-
   </div>
 </template>
 
@@ -154,8 +149,6 @@
   import 'element-ui/lib/theme-chalk/index.css'
   import ElementUI from 'element-ui'
   import ElInput from 'element-ui/packages/input/src/input'
-  import Headers from './common/header/Header.vue'
-  import Bottom from './common/footer/Footer'
   import Slideshow from './common/header/Slideshow'
   import Search from './common/header/Search'
 
@@ -166,8 +159,6 @@
       ElInput,
       ElCarouselItem,
       ElCarousel,
-      Headers,
-      Bottom,
       Slideshow,
       Search
     },
