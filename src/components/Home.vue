@@ -94,13 +94,13 @@
           </div>
         </div>
       </div>
-      <div style="clear:both;margin-top:50px;padding-bottom: 500px;">
+      <div style="clear:both;margin-top:50px;">
         <div><img src="../assets/images/m02.png"/></div>
         <el-carousel :interval="3000" class="teamwork">
           <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
              <h3 style="line-height:140px;">{{ item }}</h3>
            </el-carousel-item>-->
-          <el-carousel-item class="teamwork-child" style="background-color:transparent">
+          <el-carousel-item class="teamwork-child"  style="background-color:transparent">
             <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
             <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
             <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
@@ -399,24 +399,21 @@
   }
   .teamwork{
     width:80%;
-    margin:20px auto 0;
+    margin:-20px auto 0;
   }
   .teamwork-child{
-   /* width:140px;*/
     overflow: hidden;
-    /*border-radius: 75px;*/
-    background-color: transparent;
-    /*margin-left: 235px;*//*
-    border:1px solid #999;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .teamwork-child-img{
     width:150px;
     height: 150px;
-    line-height: 150px;
     border-radius: 75px;
     border: 1px solid #e3e3e3;
     box-shadow: 5px 5px 2px #888888;
-    margin-left: 70px;
+    margin-top:75px;
   }
   .about-us-img {
   }
