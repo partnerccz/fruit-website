@@ -9,7 +9,7 @@ const Test = resolve => require(['../components/test.vue'], resolve)
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',

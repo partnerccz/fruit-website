@@ -17,7 +17,8 @@
         <div style="font-size:34px;color:#d0d0d0;margin-left:-41%;">
           ABOUT US
         </div>
-        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="70%;" height="250"/><span></span>
+        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="70%;"
+                                       height="250"/><span></span>
         </div>
         <div>
           <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
@@ -25,9 +26,9 @@
         <div style="font-size:18px;width: 100%;text-align: left;display: flex;line-height: 32px;">
           <div style="width:62%;margin:20px auto 0;color:#1f1f1f;font-weight: 500;">
             <b><span style="color:#7cb930;">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
-            构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
-            我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
-            我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
+              构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
+              我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
+              我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
             </b>
           </div>
         </div>
@@ -56,7 +57,7 @@
 
       <div style="margin-top:70px;display: flex;flex-direction: row;">
         <div style="flex:0.35;">
-          <img src="../assets/images/mainImg/za.jpg" height="500" width="100%" />
+          <img src="../assets/images/mainImg/za.jpg" height="500" width="100%"/>
         </div>
         <div
           style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 500px;">
@@ -177,6 +178,7 @@
   import Search from './common/header/Search'
 
   import '../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'
+
   export default {
     name: 'home',
     components: {
@@ -283,13 +285,15 @@
 <style scoped>
   .home {
     background-color: white;
-    margin:0 auto;
-    width:80%;
+    margin: 0 auto;
+    width: 80%;
   }
-  .content{
-    width:100%;
-    margin-top:40px;
+
+  .content {
+    width: 100%;
+    margin-top: 40px;
   }
+
   @-webkit-keyframes fadeInOut {
     0% {
       opacity: 0;
@@ -407,14 +411,17 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .teamwork-child-img{
-    width:150px;
+
+  .teamwork-child-img {
+    width: 150px;
     height: 150px;
+    border-radius: 50%;
     border-radius: 75px;
     border: 1px solid #e3e3e3;
     box-shadow: 5px 5px 2px #888888;
     margin-top:75px;
   }
+
   .about-us-img {
   }
 
