@@ -17,16 +17,18 @@
         <div style="font-size:34px;color:#d0d0d0;margin-left:-41%;">
           ABOUT US
         </div>
-        <div class="about-us-img"><img src="../assets/images/about-title.png" width="70%;" height="250"/><span></span>
+        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="70%;" height="250"/><span></span>
         </div>
         <div>
           <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
         </div>
         <div style="font-size:18px;width: 100%;text-align: left;display: flex;line-height: 32px;">
           <div style="width:62%;margin:20px auto 0;color:#1f1f1f;font-weight: 500;">
-            <span style="color:#7cb930;">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
+            <b><span style="color:#7cb930;">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
             构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
-            我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链化为"学校"文化，成长为主线，强调开放、高效、沟通。
+            我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
+            我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
+            </b>
           </div>
         </div>
         <div class="quality-service" style="margin-top:60px;">
@@ -45,8 +47,8 @@
           </dl>
           <dl style="flex:1;">
             <dt><img src="../assets/images/icon03.png"/></dt>
-            <dd>售后服务</dd>
-            <dd>完善的售后服务，专人、全程跟进，节约人力、物力、财力成本，保证服务质量。</dd>
+            <dd>冷链物流</dd>
+            <dd>我们建立了采购到终端的全程冷链运输提体系，从干线到支线的轴辐式流通网络，产生集群效益，带动区域的水果行业的发展。</dd>
           </dl>
         </div>
       </div>
@@ -54,7 +56,7 @@
 
       <div style="margin-top:70px;display: flex;flex-direction: row;">
         <div style="flex:0.35;">
-          <img src="../assets/images/timg.jpg" width="100%" height="500"/>
+          <img src="../assets/images/mainImg/za.jpg" height="500" width="100%" />
         </div>
         <div
           style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 500px;">
@@ -143,16 +145,14 @@
 </template>
 
 <script>
-  import Vue from 'vue'
   import ElCarousel from 'element-ui/packages/carousel/src/main'
   import ElCarouselItem from 'element-ui/packages/carousel/src/item'
   import 'element-ui/lib/theme-chalk/index.css'
-  import ElementUI from 'element-ui'
   import ElInput from 'element-ui/packages/input/src/input'
   import Slideshow from './common/header/Slideshow'
   import Search from './common/header/Search'
 
-  Vue.use(ElementUI)
+  import '../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'
   export default {
     name: 'home',
     components: {
@@ -170,7 +170,7 @@
         video: [
           {
             _dom: '',
-            videoSrc: 'http://babylife.qiniudn.com/FtRVyPQHHocjVYjeJSrcwDkApTLQ',
+            videoSrc: require('../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'),
             videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
             playStatus: '',
             muteStatus: '',
@@ -180,7 +180,7 @@
           },
           {
             _dom: '',
-            videoSrc: 'http://babylife.qiniudn.com/FtRVyPQHHocjVYjeJSrcwDkApTLQ',
+            videoSrc: require('../assets/vedio/b034c42a57e1ff0c595ccc8ad6d9ab8a.mp4'),
             videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
             playStatus: '',
             muteStatus: '',
