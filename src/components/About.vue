@@ -1,7 +1,7 @@
 <template>
   <div class="fruit-display">
     <Headers></Headers>
-    <img class="show_img" src="../assets/images/ad_01.jpg"/>
+    <img class="show_img" src="../assets/images/map/百度地图.png"/>
     <Search></Search>
 
     <div class="text_conten">
