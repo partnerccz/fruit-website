@@ -57,7 +57,8 @@
               ],
               [
                 {
-                  img_url: require('../assets/images/product/import/进口蓝莓-z.jpg'),
+                  img_url: '',
+                  // img_url: require('../assets/images/product/import/进口蓝莓-z.jpg'),
                   fruits_name: '进口蓝莓'
                 },
                 {
@@ -142,6 +143,7 @@
           width: 100%;
           .truit_item {
             padding: 0px 10px;
+            width: 25%;
             .fruit_img {
               width: 100%;
             }
