@@ -2,7 +2,7 @@
   <div class="Slideshow">
     <!--slider-->
     <div class="slider">
-      <el-carousel height="650px">
+      <el-carousel height="560px">
         <el-carousel-item>
           <img src="../../../assets/images/mainImg/reader1-1.jpg" width="100%"/>
           <div class="showStr">
@@ -45,8 +45,9 @@
     .slider {
       .showStr {
         position: absolute;
-        left: 40%;
-        top: 430px;
+        left: 50%;
+        top: 380px;
+        margin-left:-173px;
         z-index: 10000;
         font-size: 28px;
         color: #ffffff;
@@ -66,7 +67,7 @@
       .showStr2 {
         position: absolute;
         left: 50%;
-        top: 430px;
+        top: 30px;
         z-index: 10000;
         font-size: 22px;
         color: #ffffff;

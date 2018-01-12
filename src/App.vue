@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
     <!--<img src="./assets/logo.png">-->
-    <router-view/>
+    <router-view v-wechat-title="$route.meta.title"/>
     <Footer></Footer>
   </div>
 </template>
@@ -27,7 +27,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin: 0px;
+    width:1263px;
+    margin: 0px auto;
   }
   body{
     margin:0px;
