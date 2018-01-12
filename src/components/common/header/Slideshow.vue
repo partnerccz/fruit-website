@@ -65,6 +65,7 @@
         }
       }
       .showStr2 {
+        // **
         position: absolute;
         left: 50%;
         top: 340px;
