@@ -15,7 +15,7 @@ export default new Router({
       name: 'Home',
       component: Home,
       meta: {
-        title: '指猴互联网科技有限公司'
+        title: '嘻果'
       }
     }, {
       path: '/about',
