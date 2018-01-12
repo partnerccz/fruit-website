@@ -125,7 +125,7 @@
 <style scoped lang="scss">
   .product {
     margin: 0px auto;
-    width: 80%;
+    width: 100%;
     .show_img {
       width: 100%;
     }

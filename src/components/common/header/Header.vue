@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header_app_bar">
     <tr>
       <td>
         <router-link to="/"><p><img src="../../../assets/images/menu_icon.png" class="header_icon"/>&nbsp;嘻果首页</p>
@@ -25,19 +25,23 @@
 
 <script>
   export default {
-    name: 'header'
+    name: 'header_app_bar'
   }
 </script>
 
 <style scoped lang="scss">
-  .header {
-    background-color: rgba(0, 0, 0, .3);
+  .header_app_bar {
+    clear: both;
+    background-color: rgba(0, 0, 0, .5);
     position: fixed;
-    left: 10%;
-    top: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+
     z-index: 5;
-    width: 80%;
-    margin: 0px auto;
+    /*width: 80%;*/
+    width:1263px;
+    margin: 0 auto;
     tr {
       margin: 0px auto;
       width: 50%;

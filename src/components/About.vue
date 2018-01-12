@@ -52,7 +52,7 @@
 <style scoped lang="scss">
   .fruit-display {
     margin: 0px auto;
-    width: 80%;
+    width: 100%;
 
     .show_img {
       width: 100%;
