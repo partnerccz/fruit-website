@@ -2,11 +2,11 @@
   <div class="header_app_bar">
     <tr>
       <td>
-        <router-link to="/"><p><img src="../../../assets/images/menu_icon.png" class="header_icon"/>&nbsp;嘻果首页</p>
+        <router-link to="/"><p><img src="../../../assets/images/else/menu_icon.png" class="header_icon"/>&nbsp;嘻果首页</p>
         </router-link>
       </td>
       <td>
-        <router-link to="/"><img src="../../../assets/images/logo.png" class="logo"/></router-link>
+        <router-link to="/"><img src="../../../assets/images/else/logo.png" class="logo"/></router-link>
       </td>
       <td>
         <router-link to="/about"><p>关于我们</p></router-link>

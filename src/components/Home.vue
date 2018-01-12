@@ -32,21 +32,21 @@
           </div>
         </div>
         <div class="quality-service" style="margin-top:60px;">
-          <img src="../assets/images/m01.png"/>
+          <img src="../assets/images/else/m01.png"/>
         </div>
         <div class="service-standard" style="width:1010px;display: flex;flex-direction: row;margin:0px auto;">
           <dl style="flex:1;">
-            <dt><img src="../assets/images/icon01.png"/></dt>
+            <dt><img src="../assets/images/else/icon01.png"/></dt>
             <dd>售后服务</dd>
             <dd>完善的售后服务，专人、全程跟进，节约人力、物力、财力成本，保证服务质量。</dd>
           </dl>
           <dl style="flex:1;">
-            <dt><img src="../assets/images/icon02.png"/></dt>
+            <dt><img src="../assets/images/else/icon02.png"/></dt>
             <dd>采购与销售</dd>
             <dd>全球化的采购网络，引进国外高品质水果，甄选国内优势水果，基于开发的心零售供应链系统，高效的分销、直销体系，为合作伙伴提供专业的水果服务。</dd>
           </dl>
           <dl style="flex:1;">
-            <dt><img src="../assets/images/icon03.png"/></dt>
+            <dt><img src="../assets/images/else/icon03.png"/></dt>
             <dd>冷链物流</dd>
             <dd>我们建立了采购到终端的全程冷链运输提体系，从干线到支线的轴辐式流通网络，产生集群效益，带动区域的水果行业的发展。</dd>
           </dl>
@@ -62,7 +62,7 @@
           style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 400px;">
           <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 300%;">高效供应链</div>
           <div style="flex: 0.24;margin-top:-30px;">
-            <img src="../assets/images/lc.png"/>
+            <img src="../assets/images/else/lc.png"/>
           </div>
           <div
             style="flex: 0.52;display: flex;flex-direction: row;justify-content: space-evenly;margin:0px;position:relative;">
@@ -75,7 +75,7 @@
             <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
                 <span class="ico ico-skip"></span>
-                <span class="" v-on:click="showFullScreen(0)" style="display:inline-block;margin-top:-32px;"><img src="../assets/images/fullscreem.jpg" height="22"
+                <span class="" v-on:click="showFullScreen(0)" style="display:inline-block;margin-top:-32px;"><img src="../assets/images/else/fullscreem.jpg" height="22"
                                                                    width="22"
                                                                    style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
                 <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
@@ -88,7 +88,7 @@
               </video><!--
             <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
               <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(1)"><img src="../assets/images/fullscreem.jpg" height="22"
+              <span class="" v-on:click="showFullScreen(1)"><img src="../assets/images/else/fullscreem.jpg" height="22"
                                                                  width="22"
                                                                  style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
               <span class="ico ico-video" :class="{ hide: video[1].isPlay }" v-on:click="playClick(1)">{{video[1].playOrPause}}</span>
@@ -97,52 +97,52 @@
         </div>
       </div>
       <div style="clear:both;margin-top:50px;">
-        <div><img src="../assets/images/m02.png"/></div>
+        <div><img src="../assets/images/else/m02.png"/></div>
         <el-carousel :interval="3000" class="teamwork">
           <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
              <h3 style="line-height:140px;">{{ item }}</h3>
            </el-carousel-item>-->
           <el-carousel-item class="teamwork-child"  style="background-color:transparent">
-            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/teamwork04.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
+            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
           </el-carousel-item>
 
         </el-carousel>
@@ -162,7 +162,7 @@
       <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
           <span class="ico ico-skip"></span>
-          <span v-on:click="closeFullScreen()"><img src="../assets/images/normalscreen.jpg" height="22" width="22"
+          <span v-on:click="closeFullScreen()"><img src="../assets/images/else/normalscreen.jpg" height="22" width="22"
                                                     style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
           <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
 

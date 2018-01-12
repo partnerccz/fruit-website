@@ -7,7 +7,7 @@
           <img src="../../../assets/images/main/reader1-1.jpg" width="100%"/>
           <div class="showStr">
             <span class="str">与合作伙伴携手共赢</span>
-            <img class="str_img" src="../../../assets/images/m01.png"/>
+            <img class="str_img" src="../../../assets/images/else/m01.png"/>
           </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -17,7 +17,7 @@
               <span style="display: block">整合全球优质资源，构建高效供应链，</span>
               <span style="display: block">推动现代农业的发展，实现产业报国。</span>
             </div>
-            <img src="../../../assets/images/m01.png"/>
+            <img src="../../../assets/images/else/m01.png"/>
           </div>
         </el-carousel-item>
       </el-carousel>
