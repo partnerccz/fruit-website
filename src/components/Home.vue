@@ -17,7 +17,7 @@
         <div style="font-size:34px;color:#d0d0d0;text-align:left;margin-left:345px">
           ABOUT US
         </div>
-        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="1010px" height="250"/><span></span>
+        <div class="about-us-img"><img src="../assets/images/main/reader1-3.jpg" width="1010px" height="250"/><span></span>
         </div>
         <div>
           <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
@@ -56,7 +56,7 @@
 
       <div style="margin-top:60px;display: flex;flex-direction: row;">
         <div style="flex:0.35;">
-          <img src="../assets/images/mainImg/za-z.jpg" height="400" width="100%" />
+          <img src="../assets/images/main/za-z.jpg" height="400" width="100%" />
         </div>
         <div
           style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 400px;">
