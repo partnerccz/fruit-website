@@ -39,37 +39,37 @@
             fruits: [
               [
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/智利车厘子.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/智利车厘子-z.jpg'),
                   fruits_name: '智利车厘子'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/越南红心火龙果.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/越南红心火龙果-z.jpg'),
                   fruits_name: '越南红心火龙果'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/印尼山竹.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/印尼山竹-z.jpg'),
                   fruits_name: '印尼山竹'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/干尧.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/干尧-z.jpg'),
                   fruits_name: '越南干尧榴莲'
                 }
               ],
               [
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/进口蓝莓.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/进口蓝莓-z.jpg'),
                   fruits_name: '进口蓝莓'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/哥伦比亚燕窝果.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/哥伦比亚燕窝果-z.jpg'),
                   fruits_name: '哥伦比亚燕窝果'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/台湾高端柠檬.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/台湾高端柠檬-z.jpg'),
                   fruits_name: '进口柠檬'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/import/草莓.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/import/草莓-z.jpg'),
                   fruits_name: '进口草莓'
                 }
               ]
@@ -80,37 +80,37 @@
             fruits: [
               [
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/齐峰翠香猕猴桃.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/齐峰翠香猕猴桃-z.jpg'),
                   fruits_name: '齐峰翠香猕猴桃'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/不知火丑橘.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/不知火丑橘-z.jpg'),
                   fruits_name: '不知火丑橘'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/冰糖木瓜.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/冰糖木瓜-z.jpg'),
                   fruits_name: '冰糖木瓜'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/广西脆皮金桔.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/广西脆皮金桔-z.jpg'),
                   fruits_name: '广西脆皮金桔'
                 }
               ],
               [
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/新疆无籽红提.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/新疆无籽红提-z.jpg'),
                   fruits_name: '新疆无籽红提'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/百香果.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/百香果-z.jpg'),
                   fruits_name: '百香果'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/老树冰糖血橙.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/老树冰糖血橙-z.jpg'),
                   fruits_name: '老树冰糖血橙'
                 },
                 {
-                  img_url: require('../assets/images/ProductShowImg/domestic/阿克苏苹果.jpg'),
+                  img_url: require('../assets/images/ProductShowImg/domestic/阿克苏苹果-z.jpg'),
                   fruits_name: '阿克苏苹果'
                 }
               ]

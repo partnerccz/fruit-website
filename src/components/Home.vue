@@ -14,28 +14,27 @@
           <span style="display: block;margin-top:7px;">关 于</span>
           <span style="display: block;;margin-top:2px;">我 们</span>
         </div>
-        <div style="font-size:34px;color:#d0d0d0;margin-left:-41%;">
+        <div style="font-size:34px;color:#d0d0d0;text-align:left;margin-left:345px">
           ABOUT US
         </div>
-        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="70%;"
-                                       height="250"/><span></span>
+        <div class="about-us-img"><img src="../assets/images/mainImg/reader1-3.jpg" width="1010px" height="250"/><span></span>
         </div>
         <div>
           <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
         </div>
         <div style="font-size:18px;width: 100%;text-align: left;display: flex;line-height: 32px;">
-          <div style="width:62%;margin:20px auto 0;color:#1f1f1f;font-weight: 500;">
+          <div style="width:920px;margin:20px auto 0;color:#1f1f1f;font-weight: 500;">
             <b><span style="color:#7cb930;">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
-              构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
-              我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
-              我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
+            构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
+            我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
+            我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
             </b>
           </div>
         </div>
         <div class="quality-service" style="margin-top:60px;">
           <img src="../assets/images/m01.png"/>
         </div>
-        <div class="service-standard" style="width:70%;display: flex;flex-direction: row;margin:0px auto;">
+        <div class="service-standard" style="width:1010px;display: flex;flex-direction: row;margin:0px auto;">
           <dl style="flex:1;">
             <dt><img src="../assets/images/icon01.png"/></dt>
             <dd>售后服务</dd>
@@ -55,34 +54,36 @@
       </div>
 
 
-      <div style="margin-top:70px;display: flex;flex-direction: row;">
+      <div style="margin-top:60px;display: flex;flex-direction: row;">
         <div style="flex:0.35;">
-          <img src="../assets/images/mainImg/za.jpg" height="500" width="100%"/>
+          <img src="../assets/images/mainImg/za-z.jpg" height="400" width="100%" />
         </div>
         <div
-          style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 500px;">
-          <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 500%;">高效供应链</div>
-          <div style="flex: 0.24;">
+          style="flex:0.65;display: flex;flex-direction: column;align-content: center;background-color: #f4f4f4;height: 400px;">
+          <div style="flex: 0.24;font-size:24px;font-weight: bold;align-content: center;line-height: 300%;">高效供应链</div>
+          <div style="flex: 0.24;margin-top:-30px;">
             <img src="../assets/images/lc.png"/>
           </div>
           <div
             style="flex: 0.52;display: flex;flex-direction: row;justify-content: space-evenly;margin:0px;position:relative;">
             <div style="width:38%;height: 95%;border:0;background-color: white;margin-top:-18px;text-align: right;">
-              <video id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus"
-                     :autoplay="video[0].playStatus" height="247px" width="100%">
+              <video  id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus"
+                      height="100%" width="100%">
                 your browser does not support the video tag
               </video>
               <!--<img :src="playStatus" width="80" height="80" style="position:absolute;left:23%;top:30%;"/>--><!--
             <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
-              <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(0)"><img src="../assets/images/fullscreem.jpg" height="22"
-                                                                 width="22"
-                                                                 style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
-              <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
+
+                <span class="ico ico-skip"></span>
+                <span class="" v-on:click="showFullScreen(0)" style="display:inline-block;margin-top:-32px;"><img src="../assets/images/fullscreem.jpg" height="22"
+                                                                   width="22"
+                                                                   style="vertical-align: middle;margin-top:-3px;"/>&nbsp;全屏</span>
+                <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
+
             </div>
             <div style="width:38%;height: 95%;border:0;background-color: white;margin-top:-20px;text-align: right;">
               <video id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus"
-                     :autoplay="video[1].playStatus" height="247px" width="100%">
+                     height="100%" width="100%">
                 your browser does not support the video tag
               </video><!--
             <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
@@ -149,20 +150,22 @@
     </div>
 
     <div id="showFullScreen" class="closeFullScreen"
-         style="position: absolute;left: 1px;top: 1px;width:100%;height: 3400px;background-color: rgba(0, 0, 0,1);z-index:100000;overflow: hidden;">
+         style="height:3600px;position: absolute;left: 1px;top: 1px;width:100%;background-color: rgba(0, 0, 0,1);z-index:100000;overflow: hidden;">
       <div
-        style="width:600px;height: 450px;background-color: white;position: fixed;left:50%;top:150px;margin-left:-250px;color:white;text-align: right;">
+        style="width:600px;height: 450px;background-color: white;position: fixed;left:50%;top:50px;margin-left:-250px;color:white;text-align: right;">
         <video id="myvideo3" :src="video[fullscreen].videoSrc" :poster="video[fullscreen].videoImg"
-               :muted="video[fullscreen].muteStatus" :autoplay="video[fullscreen].playStatus" height="450px"
+               :muted="video[fullscreen].muteStatus"  height="450px"
                width="600px">
           your browser does not support the video tag
         </video>
         <!--<img :src="playStatus" width="80" height="80" style="position:absolute;left:23%;top:30%;"/>--><!--
       <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
-        <span class="ico ico-skip"></span>
-        <span v-on:click="closeFullScreen()"><img src="../assets/images/normalscreen.jpg" height="22" width="22"
-                                                  style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
-        <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
+
+          <span class="ico ico-skip"></span>
+          <span v-on:click="closeFullScreen()"><img src="../assets/images/normalscreen.jpg" height="22" width="22"
+                                                    style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
+          <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
+
       </div>
     </div>
 
@@ -176,8 +179,6 @@
   import ElInput from 'element-ui/packages/input/src/input'
   import Slideshow from './common/header/Slideshow'
   import Search from './common/header/Search'
-
-  import '../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'
 
   export default {
     name: 'home',
@@ -197,22 +198,22 @@
           {
             _dom: '',
             videoSrc: require('../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'),
-            videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
+            videoImg: require('../assets/vedio/vedio01.png'),
             playStatus: '',
             muteStatus: '',
-            isMute: true,
-            isPlay: true,
-            playOrPause: '暂停'
+            isMute: false,
+            isPlay: false,
+            playOrPause: '播放'
           },
           {
             _dom: '',
             videoSrc: require('../assets/vedio/b034c42a57e1ff0c595ccc8ad6d9ab8a.mp4'),
-            videoImg: 'http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg',
+            videoImg: require('../assets/vedio/vedio02.png'),
             playStatus: '',
             muteStatus: '',
-            isMute: true,
-            isPlay: true,
-            playOrPause: '暂停'
+            isMute: false,
+            isPlay: false,
+            playOrPause: '播放'
           }
         ],
         fullscreen: 0
@@ -220,10 +221,8 @@
     },
     methods: {
       handleSelect: function (key, keyPath) {
-        console.log(key, keyPath)
       },
       playClick: function (val) {
-        console.log(val)
         if (val === 0) {
           this._dom = document.getElementById('myvideo1')
         } else if (val >= 2) {
@@ -251,23 +250,18 @@
       },
       showOtherVideo: function () {
         let _this = this
-        console.log('_this:' + _this)
         setInterval(function () {
           if (typeof (_this._dom) !== 'undefined') {
-            console.log('_this._dom:' + _this._dom)
             _this.flag = _this._dom.paused
             if (_this.flag) {
-              console.log(_this.flag)
               this.playOrPause = '播放'
             }
           } else {
-            console.log('a')
           }
         }, 1000)
       },
       showFullScreen: function (val) {
         this.fullscreen = val
-        console.log(val)
         var sfs = document.getElementById('showFullScreen')
         sfs.style.display = 'block'
       },
@@ -285,15 +279,14 @@
 <style scoped>
   .home {
     background-color: white;
-    margin: 0 auto;
-    width: 80%;
+    margin:0 auto;
+    /*width:80%;*/
+    width:1263px;
   }
-
-  .content {
-    width: 100%;
-    margin-top: 40px;
+  .content{
+    width:100%;
+    margin-top:40px;
   }
-
   @-webkit-keyframes fadeInOut {
     0% {
       opacity: 0;
@@ -334,14 +327,6 @@
     }
   }
 
-  .closeFullScreen {
-    position: absolute;
-    -webkit-animation-name: fadeOutIn;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-direction: alternate;
-  }
 
   .el-carousel__item h3 {
     color: #475669;
@@ -410,18 +395,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    justify-content:space-evenly;
+    -webkit--moz-box-pack:space-evenly;
+    box-pack:space-evenly;
+    background-color: red;
   }
-
-  .teamwork-child-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border-radius: 75px;
+  .teamwork-child-img{
+    width:130px;
+    height: 130px;
+    border-radius: 65px;
     border: 1px solid #e3e3e3;
     box-shadow: 5px 5px 2px #888888;
     margin-top:75px;
   }
-
   .about-us-img {
   }
 
