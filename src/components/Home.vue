@@ -65,7 +65,8 @@
           </div>
           <div class="home-middle-right-content">
             <div class="video-container">
-              <video preload="none" id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus"
+              <video preload="none" id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg"
+                     :muted="video[0].muteStatus"
                      height="100%" width="100%">
                 your browser does not support the video tag
               </video>
@@ -73,22 +74,25 @@
             <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
               <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(0)" class="full-screen-container"><img v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
+              <span class="" v-on:click="showFullScreen(0)" class="full-screen-container"><img
+                v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
                 width="22"
                 class="full-screen-text"/>&nbsp;全屏</span>
               <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
 
             </div>
             <div class="video-container">
-              <video preload="none" id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus"
+              <video preload="none" id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg"
+                     :muted="video[1].muteStatus"
                      height="100%" width="100%">
                 your browser does not support the video tag
               </video><!--
             <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
               <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(1)"><img v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
-                                                                 width="22"
-                                                                 class="full-screen-text"/>&nbsp;全屏</span>
+              <span class="" v-on:click="showFullScreen(1)"><img
+                v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
+                width="22"
+                class="full-screen-text"/>&nbsp;全屏</span>
               <span class="ico ico-video" :class="{ hide: video[1].isPlay }" v-on:click="playClick(1)">{{video[1].playOrPause}}</span>
             </div>
           </div>
@@ -144,7 +148,7 @@
           </el-carousel-item>
 
         </el-carousel>-->
-        <slider :pages="pages" :sliderinit="sliderinit"  class="teamwork">
+        <slider :pages="pages" :sliderinit="sliderinit" class="teamwork">
           <!-- slot  -->
         </slider>
       </div>
@@ -161,7 +165,8 @@
       <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
         <span class="ico ico-skip"></span>
-        <span v-on:click="closeFullScreen()"><img v-lazy="require('../assets/images/else/normalscreen.jpg')" height="22" width="22"
+        <span v-on:click="closeFullScreen()"><img v-lazy="require('../assets/images/else/normalscreen.jpg')" height="22"
+                                                  width="22"
                                                   style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
         <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
 
@@ -277,7 +282,7 @@
           {
             title: '',
             style: {
-              background: 'url(' + require('../assets/images/else/teamwork06.png') + ')',
+              background: 'url(' + require('../assets/images/else/teamwork06.jpg') + ')',
               width: '150px',
               heidth: '150px',
               border: '1px solid #e3e3e3',
@@ -490,10 +495,10 @@
 
   .teamwork {
     width: 80%;
-    height:152px;
+    height: 152px;
     line-height: 152px;
-    padding:40px 0 100px 20px;
-    margin:0 auto;
+    padding: 40px 0 100px 20px;
+    margin: 0 auto;
   }
 
   .teamwork-child {
