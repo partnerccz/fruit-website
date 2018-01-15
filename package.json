@@ -17,6 +17,7 @@
     "axios": "^0.17.1",
     "element-ui": "^2.0.10",
     "vue": "^2.5.2",
+    "vue-concise-slider": "^2.4.3",
     "vue-router": "^3.0.1",
     "vue-wechat-title": "^2.0.4",
     "vuex": "^3.0.1"
