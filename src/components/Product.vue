@@ -57,8 +57,7 @@
               ],
               [
                 {
-                  img_url: '',
-                  // img_url: require('../assets/images/product/import/进口蓝莓-z.jpg'),
+                  img_url: require('../assets/images/product/import/进口蓝莓-z.jpg'),
                   fruits_name: '进口蓝莓'
                 },
                 {
