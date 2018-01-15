@@ -96,10 +96,10 @@
       </div>
       <div class="teamwork-container">
         <div><img v-lazy="require('../assets/images/else/m02.png')"/></div>
-        <el-carousel :interval="3000" class="teamwork">
-          <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
+        <!--<el-carousel :interval="3000" class="teamwork">
+          &lt;!&ndash; <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
              <h3 style="line-height:140px;">{{ item }}</h3>
-           </el-carousel-item>-->
+           </el-carousel-item>&ndash;&gt;
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
             <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
             <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
@@ -143,7 +143,10 @@
             <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
 
-        </el-carousel>
+        </el-carousel>-->
+        <slider :pages="pages" :sliderinit="sliderinit"  class="teamwork">
+          <!-- slot  -->
+        </slider>
       </div>
     </div>
 
@@ -175,6 +178,7 @@
   import ElInput from 'element-ui/packages/input/src/input'
   import Slideshow from './common/header/Slideshow'
   import Search from './common/header/Search'
+  import slider from 'vue-concise-slider'
 
   export default {
     name: 'home',
@@ -183,7 +187,8 @@
       ElCarouselItem,
       ElCarousel,
       Slideshow,
-      Search
+      Search,
+      slider
     },
     data: function () {
       return {
@@ -212,7 +217,85 @@
             playOrPause: '播放'
           }
         ],
-        fullscreen: 0
+        fullscreen: 0,
+        pages: [
+          {
+            title: '',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork01.jpg') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          },
+          {
+            title: '',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork02.jpg') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          },
+          {
+            title: 'slide3',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork03.jpg') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          },
+          {
+            title: '',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork04.jpg') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          },
+          {
+            title: '',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork05.jpg') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          },
+          {
+            title: '',
+            style: {
+              background: 'url(' + require('../assets/images/else/teamwork06.png') + ')',
+              width: '150px',
+              heidth: '150px',
+              border: '1px solid #e3e3e3',
+              borderRadius: '75px',
+              'margin-left': '60px'
+            }
+          }
+        ],
+        sliderinit: {
+          currentPage: 0, // 当前页码
+          thresholdDistance: 500, // 滑动判定距离
+          thresholdTime: 100, // 滑动判定时间
+          autoplay: 2000, // 自动滚动[ms]
+          loop: true, // 循环滚动
+          direction: 'horizontal', // 方向设置，垂直滚动
+          infinite: 4, // 无限滚动前后遍历数
+          slidesToScroll: 4 // 每次滑动项数
+        }
       }
     },
     methods: {
@@ -407,7 +490,10 @@
 
   .teamwork {
     width: 80%;
-    margin: -20px auto 0;
+    height:152px;
+    line-height: 152px;
+    padding:40px 0 100px 20px;
+    margin:0 auto;
   }
 
   .teamwork-child {
