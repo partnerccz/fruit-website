@@ -193,7 +193,7 @@
         video: [
           {
             _dom: '',
-            videoSrc: require('../assets/vedio/9ed6bc6dbf3b8aaf8c188ac53d6e3908.mp4'),
+            videoSrc: require('../assets/vedio/video-01.mp4'),
             videoImg: require('../assets/vedio/vedio01.png'),
             playStatus: '',
             muteStatus: '',
@@ -203,7 +203,7 @@
           },
           {
             _dom: '',
-            videoSrc: require('../assets/vedio/b034c42a57e1ff0c595ccc8ad6d9ab8a.mp4'),
+            videoSrc: require('../assets/vedio/video-02.mp4'),
             videoImg: require('../assets/vedio/vedio02.png'),
             playStatus: '',
             muteStatus: '',
