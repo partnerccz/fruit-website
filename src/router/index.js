@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Home = resolve => require(['./../components/Home.vue'], resolve)
 const About = resolve => require(['../components/About.vue'], resolve)
 const Product = resolve => require(['../components/Product.vue'], resolve)
+const test = resolve => require(['../components/test.vue'], resolve)
 
 Vue.use(Router)
 
@@ -28,6 +29,13 @@ export default new Router({
       path: '/product',
       name: 'Product',
       component: Product,
+      meta: {
+        title: '产品服务'
+      }
+    }, {
+      path: '/test',
+      name: 'test',
+      component: test,
       meta: {
         title: '产品服务'
       }

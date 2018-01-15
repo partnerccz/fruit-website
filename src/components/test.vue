@@ -1,70 +1,90 @@
 <template>
-  <div>
-    <div class="box">
-      <div class="item">
-        <p>1</p>
-      </div>
-      <div class="item">
-        <p>2</p>
-      </div>
-      <div class="item">
-        <p>3</p>
-      </div>
-      <div class="item">
-        <p>4</p>
-      </div>
-      <div class="item">
-        <p>5</p>
-      </div>
-      <div class="item">
-        <p>6</p>
-      </div>
-      <div class="item">
-        <p>7</p>
-      </div>
-      <div class="item">
-        <p>8</p>
-      </div>
-    </div>
-    <!--div[style='background-color: #676767']>div[style='background-color: red']*8-->
+  <div ref="container">
+    <ul>
+      <li v-for="item in imgUrl">
+        <img v-lazy="item.src" alt="" width="300" height="150"/>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-  import ElementUI from 'element-ui'
-
   export default {
     name: 'test',
-    data () {
-      return {}
+    data: function () {
+      return {
+        imgUrl: [
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')},
+          {src: require('../assets/images/product/import/越南红心火龙果-z.jpg')}
+        ]
+      }
     },
     methods: {},
     components: {
-      ElementUI
     }
   }
 </script>
 
 <style scoped>
-
-  .box {
-    background-color: #676767;
-    width: 800px;
-    height: 400px;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+  img[lazy=loading]{
+  /*your code*/
   }
-
-  .item {
-    background-color: red;
-    border: 2px solid #000;
-    width: 180px;
-    height: 150px;
+  img[lazy=loaded]{
+  /* your code*/
+  animation:fade 0.5s;
   }
-
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
 </style>

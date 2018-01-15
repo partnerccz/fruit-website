@@ -16,11 +16,11 @@
         <div class="about-us-en">
           ABOUT US
         </div>
-        <div class="about-us-img"><img src="../assets/images/main/reader1-3.jpg" width="1010px"
+        <div class="about-us-img"><img v-lazy="require('../assets/images/main/reader1-3.jpg')" width="1010px"
                                        height="250"/><span></span>
         </div>
         <div>
-          <!--<img src="../assets/images/about.jpg" width="70%;" height="300"/>-->
+          <!--<img v-lazy="require('../assets/images/about.jpg')" width="70%;" height="300"/>-->
         </div>
         <div class="about-us-detail-container">
           <div class="about-us-detail">
@@ -32,21 +32,21 @@
           </div>
         </div>
         <div class="quality-service">
-          <img src="../assets/images/else/m01.png"/>
+          <img v-lazy="require('../assets/images/else/m01.png')"/>
         </div>
         <div class="service-standard">
           <dl style="flex:1;">
-            <dt><img src="../assets/images/else/icon01.png"/></dt>
+            <dt><img v-lazy="require('../assets/images/else/icon01.png')"/></dt>
             <dd>售后服务</dd>
             <dd>完善的售后服务，专人、全程跟进，节约人力、物力、财力成本，保证服务质量。</dd>
           </dl>
           <dl style="flex:1;">
-            <dt><img src="../assets/images/else/icon02.png"/></dt>
+            <dt><img v-lazy="require('../assets/images/else/icon02.png')"/></dt>
             <dd>采购与销售</dd>
             <dd>全球化的采购网络，引进国外高品质水果，甄选国内优势水果，基于开发的心零售供应链系统，高效的分销、直销体系，为合作伙伴提供专业的水果服务。</dd>
           </dl>
           <dl style="flex:1;">
-            <dt><img src="../assets/images/else/icon03.png"/></dt>
+            <dt><img v-lazy="require('../assets/images/else/icon03.png')"/></dt>
             <dd>冷链物流</dd>
             <dd>我们建立了采购到终端的全程冷链运输提体系，从干线到支线的轴辐式流通网络，产生集群效益，带动区域的水果行业的发展。</dd>
           </dl>
@@ -56,16 +56,16 @@
 
       <div class="home-middle-container">
         <div style="flex:0.35;">
-          <img src="../assets/images/main/za-z.jpg" height="400" width="100%"/>
+          <img v-lazy="require('../assets/images/main/za-z.jpg')" height="400" width="100%"/>
         </div>
         <div class="home-middle-right">
           <div class="home-middle-right-title">高效供应链</div>
           <div class="home-middle-right-middle">
-            <img src="../assets/images/else/lc.png"/>
+            <img v-lazy="require('../assets/images/else/lc.png')"/>
           </div>
           <div class="home-middle-right-content">
             <div class="video-container">
-              <video id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus"
+              <video preload="none" id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus"
                      height="100%" width="100%">
                 your browser does not support the video tag
               </video>
@@ -73,21 +73,20 @@
             <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
               <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(0)" class="full-screen-container"><img
-                src="../assets/images/else/fullscreem.jpg" height="22"
+              <span class="" v-on:click="showFullScreen(0)" class="full-screen-container"><img v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
                 width="22"
                 class="full-screen-text"/>&nbsp;全屏</span>
               <span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
 
             </div>
             <div class="video-container">
-              <video id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus"
+              <video preload="none" id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus"
                      height="100%" width="100%">
                 your browser does not support the video tag
               </video><!--
             <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
               <span class="ico ico-skip"></span>
-              <span class="" v-on:click="showFullScreen(1)"><img src="../assets/images/else/fullscreem.jpg" height="22"
+              <span class="" v-on:click="showFullScreen(1)"><img v-lazy="require('../assets/images/else/fullscreem.jpg')" height="22"
                                                                  width="22"
                                                                  class="full-screen-text"/>&nbsp;全屏</span>
               <span class="ico ico-video" :class="{ hide: video[1].isPlay }" v-on:click="playClick(1)">{{video[1].playOrPause}}</span>
@@ -96,52 +95,52 @@
         </div>
       </div>
       <div class="teamwork-container">
-        <div><img src="../assets/images/else/m02.png"/></div>
+        <div><img v-lazy="require('../assets/images/else/m02.png')"/></div>
         <el-carousel :interval="3000" class="teamwork">
           <!-- <el-carousel-item v-for="item in 10" :key="item" style="width:140px;height: 140px;border-radius: 70px;margin-left:100px;">
              <h3 style="line-height:140px;">{{ item }}</h3>
            </el-carousel-item>-->
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork03.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork05.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork03.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork05.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork06.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork03.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork05.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork06.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork05.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork06.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork05.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork05.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork06.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork03.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
           <el-carousel-item class="teamwork-child" style="background-color:transparent">
-            <img src="../assets/images/else/teamwork06.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork01.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork02.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork03.jpg" class="teamwork-child-img"/>
-            <img src="../assets/images/else/teamwork04.jpg" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork06.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork01.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork02.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork03.jpg')" class="teamwork-child-img"/>
+            <img v-lazy="require('../assets/images/else/teamwork04.jpg')" class="teamwork-child-img"/>
           </el-carousel-item>
 
         </el-carousel>
@@ -150,7 +149,7 @@
 
     <div id="showFullScreen" class="closeFullScreen">
       <div class="over-video-container">
-        <video id="myvideo3" :src="video[fullscreen].videoSrc" :poster="video[fullscreen].videoImg"
+        <video preload="none" id="myvideo3" :src="video[fullscreen].videoSrc" :poster="video[fullscreen].videoImg"
                :muted="video[fullscreen].muteStatus" height="450px"
                width="600px">
           your browser does not support the video tag
@@ -159,7 +158,7 @@
       <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
 
         <span class="ico ico-skip"></span>
-        <span v-on:click="closeFullScreen()"><img src="../assets/images/else/normalscreen.jpg" height="22" width="22"
+        <span v-on:click="closeFullScreen()"><img v-lazy="require('../assets/images/else/normalscreen.jpg')" height="22" width="22"
                                                   style="vertical-align: middle;margin-top:-3px;"/>&nbsp;小屏</span>
         <span class="ico ico-video" :class="{ hide: video[fullscreen].isPlay }" v-on:click="playClick(fullscreen+2)">{{video[fullscreen].playOrPause}}</span>
 

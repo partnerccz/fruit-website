@@ -10,7 +10,7 @@
           <div v-for="(fruitsTr, index) in fruitsClass.fruits">
             <tr>
               <td class="truit_item" v-for="(fruitsTd, index) in fruitsTr">
-                <img class="fruit_img" :key="index" :src="fruitsTd.img_url" alt="">
+                <img class="fruit_img" :key="index" v-lazy="fruitsTd.img_url" alt="">
                 <p class="fruit_name_str" v-text="fruitsTd.fruits_name"></p>
               </td>
             </tr>
