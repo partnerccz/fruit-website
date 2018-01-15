@@ -65,9 +65,10 @@
         }
       }
       .showStr2 {
+        // **
         position: absolute;
         left: 50%;
-        top: 30px;
+        top: 340px;
         z-index: 10000;
         font-size: 22px;
         color: #ffffff;
